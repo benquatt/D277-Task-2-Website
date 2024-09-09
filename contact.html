@@ -23,17 +23,17 @@
                 <h2>Have any questions about Georgia?</h2>
                 <img id="form-img" src="curious-icon.png" alt="Head with question mark">
                 <form target="_blank" method="POST">
-                    <label for="first-name">First Name: <input type="text" placeholder="Jimmy" id="first-name"></label>
+                    <label for="first-name">First Name: <input type="text" placeholder="Jimmy" id="first-name" required></label>
                     <br>
-                    <label for="last-name">Last Name: <input type="text" placeholder="Carter" id="last-name"></label>
+                    <label for="last-name">Last Name: <input type="text" placeholder="Carter" id="last-name" required></label>
                     <br>
-                    <label for="email">Email: <input type="email" placeholder="jcarter@georgia.gov" id="email"></label>
+                    <label for="email">Email: <input type="email" placeholder="jcarter@georgia.gov" id="email1" required></label>
                     <br>
-                    <label for="email-confirm">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email-confirm"></label>
+                    <label for="email-confirm">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email-confirm" required onblur="validateEmail()"></label>
                     <br>
                     <label for="question">What would you like to know?<br><textarea id="question" placeholder="What is the oldest city in Georgia?" rows="4" cols="50"></textarea></label>
                     <br>
-                    <button type="submit">Submit</button>
+                    <input type="submit" value="Submit">
                 </form>
             </section>
             <section class="city-links">
@@ -64,14 +64,12 @@
             </footer>
 
             <script>
-
                 function validateEmail() {
-                  let emailField1 = document.getElementById("email").value;
+                  let emailField1 = document.getElementById("email1").value;
                   let emailField2 = document.getElementById("email-confirm").value;
               
                   if(emailField1 != emailField2) {
                     alert("Please make sure the e-mail fields match before submitting!");
-                    return false;
                   }
                 }
               </script>
