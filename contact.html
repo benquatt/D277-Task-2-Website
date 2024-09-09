@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
         <title>Contact Us!</title>
-        <script srcx="formValidate.js"></script>
+        <script src="formValidate.js"></script>
     </head>
     <body>
         <header>
@@ -28,13 +28,13 @@
                     <br>
                     <label for="last-name">Last Name: <input type="text" placeholder="Carter" id="last-name" required></label>
                     <br>
-                    <label for="email">Email: <input type="email" placeholder="jcarter@georgia.gov" id="email1" required></label>
+                    <label for="email1">Email: <input type="email" placeholder="jcarter@georgia.gov" id="email1" required></label>
                     <br>
-                    <label for="email-confirm">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email2" required onblur="validateEmail()"></label>
+                    <label for="email2">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email2" required></label>
                     <br>
                     <label for="question">What would you like to know?<br><textarea id="question" placeholder="What is the oldest city in Georgia?" rows="4" cols="50"></textarea></label>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="validateEmail()">
                 </form>
             </section>
             <section class="city-links">
