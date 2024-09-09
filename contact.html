@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
         <title>Contact Us!</title>
+        <script srcx="formValidate.js"></script>
     </head>
     <body>
         <header>
@@ -29,7 +30,7 @@
                     <br>
                     <label for="email">Email: <input type="email" placeholder="jcarter@georgia.gov" id="email1" required></label>
                     <br>
-                    <label for="email-confirm">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email-confirm" required onblur="validateEmail()"></label>
+                    <label for="email-confirm">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email2" required onblur="validateEmail()"></label>
                     <br>
                     <label for="question">What would you like to know?<br><textarea id="question" placeholder="What is the oldest city in Georgia?" rows="4" cols="50"></textarea></label>
                     <br>
@@ -62,17 +63,6 @@
             <footer>
                 <p>Ben Quattlebaum ©2024 for <a href="https://www.wgu.edu/" target="_blank">WGU</a></p>
             </footer>
-
-            <script>
-                function validateEmail() {
-                  let emailField1 = document.getElementById("email1").value;
-                  let emailField2 = document.getElementById("email-confirm").value;
-              
-                  if(emailField1 != emailField2) {
-                    alert("Please make sure the e-mail fields match before submitting!");
-                  }
-                }
-              </script>
         </main>
     </body>
 </html>
