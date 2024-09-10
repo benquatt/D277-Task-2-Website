@@ -3,14 +3,13 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
-        <title>Contact Us!</title>
-        <script src="formvalidate.js"></script>
+        <title>Sources</title>
     </head>
     <body>
         <header>
             <a id="homepage-link" href="index.html">
-                <img alt="logo" src="peach-image.jpg" height="75px">
-                <h1>Georgia</h1>
+                <img id="icon-image" alt="logo" class="icon" src="peach-image.jpg" height="75px">
+                <h1 id="icon-text" class="icon">Georgia</h1>
             </a>
             <nav>
                 <a id="atlanta-link" href="atlanta.html">Atlanta</a>
@@ -20,22 +19,29 @@
             </nav>
         </header>
         <main>
-            <section class="form-main">
-                <h2>Have any questions about Georgia?</h2>
-                <img id="form-img" src="curious-icon.png" alt="Head with question mark">
-                <form action="https://formsubmit.co/benjaminquattlebaum@gmail.com" target="_blank" method="POST">
-                    <label for="first-name">First Name: <input type="text" placeholder="Jimmy" id="first-name" required></label>
-                    <br>
-                    <label for="last-name">Last Name: <input type="text" placeholder="Carter" id="last-name" required></label>
-                    <br>
-                    <label for="email1">Email: <input type="email" placeholder="jcarter@georgia.gov" id="email1" required></label>
-                    <br>
-                    <label for="email2">Confirm Email: <input type="email" placeholder="jcarter@georgia.gov" id="email2" required></label>
-                    <br>
-                    <label for="question">What would you like to know?<br><textarea id="question" placeholder="What is the oldest city in Georgia?" rows="4" cols="50"></textarea></label>
-                    <br>
-                    <input type="submit" value="Submit" onclick="validateEmail()">
-                </form>
+            <section class="info">
+                <div class="info-text">
+                    <h2>Referenced Content</h2>
+                    <h4>Homepage:</h4>
+                    <ul>
+                        <li>Georgia State Vector: <a target="_blank" href="https://www.vecteezy.com/vector-art/38727262-georgia-u-s-state-state-map-map-of-the-u-s-state-of-georgia">Source</a></li>
+                    </ul>
+                    <h4>Contact Page:</h4>
+                    <ul>
+                        <li>
+                            Curiosity Icon: <a target="_blank" href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbMLkci3wrNFtYKL8s57eS0kGLXn1wY_-FA_CsBJVZ2j7a-jPk">Source</a>
+                        </li>
+                    </ul>
+                    <h4>All Pages:</h4>
+                    <ul>
+                        <li>Peach Logo: <a target="_blank" href="https://www.vecteezy.com/vector-art/14275551-peach-cartoon-vector-symbol-logo-design">Source</a></li>
+                        <li>Atlanta Image: <a target="_blank" href="https://www.homegeorgia.com/blog/cultural-events-and-festivals-in-atlanta-georgia-in-2024/">Source</a></li>
+                        <li>Athens Image: <a target="_blank" href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAT54RXKQFXV_J1-hULOR_YH4_6E0K45JM20OQkChWR38oChfd">Source</a></li>
+                        <li>Savannah Image: <a target="_blank" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-d9HZdGYeogvQR-1dtVs7sDmVyghzi1IYfswQlGDGN8TCYZCz">Source</a></li>
+                    </ul>
+
+                </div>
+                <aside class="main-img"><img alt="Map of the State of Georgia" src="georgia-image.jpg"></aside>
             </section>
             <section class="city-links">
                 <h2>Check Out These Georgia Cities!</h2>
